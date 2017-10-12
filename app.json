@@ -1,0 +1,20 @@
+{
+  "name": "p2pspider",
+  "description": "p2pspider",
+  "scripts": {
+    "postdeploy": "npm install pm2 -g",
+    "pr-predestroy": "node test/index.js"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
